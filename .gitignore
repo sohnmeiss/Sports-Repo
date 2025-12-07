@@ -1,0 +1,23 @@
+# ---------------------------------------------------------------- #
+# Environment and Temporary Files
+# ---------------------------------------------------------------- #
+.DS_Store             # Mac OS X folder metadata
+.venv/                # Ignore virtual environments
+__pycache__/          # Ignore Python compiled bytecode
+
+# Ignore all Jupyter Notebook checkpoint files
+.ipynb_checkpoints/
+
+# ---------------------------------------------------------------- #
+# Data and Output Files
+# ---------------------------------------------------------------- #
+# The python code creates this master file, which is a good candidate 
+# for version control as it's the final output, but it can get large.
+# We will track the master file for now since it's the output of the daily script.
+# If it gets too big (over 100MB), you should uncomment the line below:
+# data/torvik_master_2026.csv
+
+# Ignore the snapshot and any other temporary CSVs
+data/torvik_snapshot_2026.csv
+*.log
+*.sqlite
